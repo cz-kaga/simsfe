@@ -1,0 +1,33 @@
+<template>
+
+  <div>
+    <Title/>
+    <logintitle/>
+    <Loginpage/>
+  </div>
+</template>
+
+<script>
+import Title from "./components/title";
+import Loginpage from "./components/login";
+import logintitle from "./components/logintitle";
+export default {
+  name: 'app',
+  components: {
+    Title,
+    Loginpage,
+    logintitle
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
