@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Title from "./components/title";
+import Title from "./components/titleunlogined";
 export default {
   name: 'userapp',
   components: {

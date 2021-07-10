@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <Title/>
+    <titleunlogined v-if="$store.state.isLogin === false"/>
+    <titlelogined v-if="$store.state.isLogin === true"/>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Title from "@/components/title";
-
+import titleunlogined from "@/components/titleunlogined";
+import titlelogined from "@/components/titlelogined"
 export default {
   name: 'Home',
   components: {
-    Title
+    titleunlogined,
+    titlelogined
+  },
+  data(){
+
+  },
+  watch:{
+
   }
 }
 </script>

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import login from "@/components/login";
+import login from "@/views/login";
 
 Vue.use(VueRouter)
 
@@ -27,6 +27,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode:'history',
+  base: process.env.BASE_URL,
   routes
 })
 
